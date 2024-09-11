@@ -1,0 +1,16 @@
+create table if not exists polynomial_regression_security(
+regression_section_code Integer not null,
+variable_group_owner varchar(255) null,
+system_code varchar(255) null,
+app_name varchar(255) null,
+variable_name Integer null,
+secret_variable char null,
+independent_values char null,
+dependent_values varchar(255) null,
+read_csv_mode varchar(255) null,
+write_csv_mode varchar(255) null,
+overide_csv_mode varchar(255) null,
+data_frame_object varchar(255) null,
+learn_module varchar(255) null,
+entity_state varchar(255) null,
+constraint polynomial_regression_security_pk primary key(regression_section_code));
